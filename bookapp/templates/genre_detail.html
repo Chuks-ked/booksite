@@ -2,7 +2,7 @@
 
 {% block title %}
      <title>Book Site | Genre Books </title>
-     {% endblock %}
+{% endblock %}
 {% block content %}
 <div class = 'container'>
     <div class = 'row'><h4></h4></div>
@@ -12,15 +12,12 @@
         <a href = "{% url 'book_detail' book.slug %}">
           <div>
             <div class="uk-card uk-card-default uk-card-body"> 
-                <img src = "{{book.cover_image.url}}">
-               
+                <img src = "{{book.cover_image.url}}"> 
             </div>
         </div>
       </a>
       </div>
       {% endfor %}
-      
-      
     </div>
   </div>
   {% endblock %}

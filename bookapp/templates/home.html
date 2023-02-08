@@ -2,8 +2,9 @@
 
 {% block title %}
     <title>Book Site | Home</title>
-    {% endblock %}
-  {% block content %}  
+{% endblock %}
+  
+{% block content %}  
 <div class = 'container'>
   <div class = 'row'><h4>Recommended Books</h4></div>
   <div class = 'row'>
@@ -13,7 +14,6 @@
         <div>
           <div class="uk-card uk-card-default uk-card-body"> 
               <img src = "{{book.cover_image.url}}">
-             
           </div>
       </div>
     </a>
@@ -21,8 +21,6 @@
     {% endfor %}
   </div>
 </div>
-
-
 <div class = 'container'>
   <div class = 'row'><h4>Top Fiction Books</h4></div>
   <div class = 'row'>

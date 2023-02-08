@@ -40,7 +40,6 @@
         </ul>
 
         <form class="d-flex" method = 'POST' action = "{% url 'book_search' %}" style="margin: 0px;">
-          <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
           {% csrf_token %}
           {{search_form.name_of_book}}
           <button class="btn btn-outline-success" type="submit">Search</button>
@@ -64,8 +63,7 @@
             <button type="button" class="btn btn-outline-primary">Sign Up</button></a>
             <a class="nav-link" href="{% url 'login' %}">
               <button type="button" class="btn btn-outline-success">Login</button>
-            </a>
-            
+          </a>
         {% endif %}
       </div>
       </div>

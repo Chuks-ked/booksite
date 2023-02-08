@@ -2,14 +2,12 @@
 
 {% block title %}
      <title>Book Site | Book Detail </title>
-     {% endblock %}
+{% endblock %}
 
 {% block content %}
-
 <div class = 'container' style = 'border: 2px solid black; width: 80%'>
     <div class = 'row' style = 'border: 2px solid black'>
         <div class = 'col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4'>
-            
             <div id = 'imageContainer'>
                 <img src = '{{book.cover_image.url}}'>
             </div>
@@ -20,8 +18,6 @@
                 <h2>by: <strong>{{book.author}}</strong></h2>
                 <h3>Book Summary:</h3>
                 <h4>{{book.summary}}</h4>
-                
-                
                 <a href = '{{book.pdf.url}}' download="{{book.pdf.url}}">
                 <button id = 'download'>
                     Download PDF
@@ -35,8 +31,6 @@
         </div>
     </div>
 </div>
-
-
 <div class = 'container'>
     <div class = 'row'>
         <h4>Similar Books</h4>            
@@ -48,14 +42,11 @@
         <div>
           <div class="uk-card uk-card-default uk-card-body"> 
               <img src = "{{similar_book.cover_image.url}}">
-             
           </div>
       </div>
     </a>
     </div>
     {% endfor %}
-
     </div>
-    
 </div>
 {% endblock %}
